@@ -26,16 +26,29 @@ I file come `profilo.md`, `Misure_Corporee.md` e i contenuti delle cartelle `Die
 - `Sport/`: Cartella destinata ai log degli allenamenti settimanali.
 - `profilo.md`: Il tuo "database" corporeo attuale.
 - `Misure_Corporee.md`: Tabella storica dell'evoluzione fisica.
-- `index.md`: La dashboard principale per Obsidian.
+- `index-template.md`: Template per la dashboard principale.
 - `GEMINI.md`: Il file di istruzioni (System Prompt) che guida l'AI nella gestione della wiki.
 - `SETUP.md`: Guida tecnica alla configurazione.
 
 ## 🛠 Come Usarlo
 
 1. **Clona o scarica** questo repository come un nuovo vault di Obsidian.
-2. **Configura il tuo assistente AI:** Assicurati che il tuo assistente legga il file `GEMINI.md`. Se usi Gemini CLI, lo farà automaticamente.
+2. **Copia `index-template.md` in `index.md`** per creare la tua dashboard privata.
+3. **Configura il tuo assistente AI:** Assicurati che il tuo assistente legga il file `GEMINI.md`.
 3. **Compila il Profilo:** Apri `profilo.md` e inserisci i tuoi dati (peso, altezza, età).
 4. **Inizia a loggare:** Scrivi al tuo assistente: *"Oggi a pranzo ho mangiato 100g di pasta al pomodoro e un petto di pollo"* e guarda la wiki aggiornarsi da sola!
+
+## 📱 Utilizzo su Smartphone (Senza Gemini CLI)
+
+Se vuoi utilizzare la tua Wiki direttamente dal telefono senza passare per il terminale:
+
+1.  **Setup Vault Mobile:** Scarica l'app di Obsidian per iOS o Android. Trasferisci la cartella di questo progetto sul telefono (es. tramite iCloud, Google Drive o cartelle locali) e aprila come un nuovo Vault all'interno dell'app.
+2.  **Installazione Plugin AI:** Vai nelle Impostazioni di Obsidian -> Plugin della Community. Cerca e installa un plugin per l'integrazione di LLM (consigliati: **BMO Chatbot** o **Text Generator**).
+3.  **Configurazione API (Gemini Standard):** 
+    - Vai su [Google AI Studio](https://aistudio.google.com/) per ottenere gratuitamente una API Key di Gemini.
+    - Inserisci la chiave API nelle impostazioni del plugin scelto all'interno di Obsidian, selezionando un modello della famiglia Gemini (es. `gemini-1.5-flash` o `gemini-1.5-pro`).
+    - *(Nota: Se preferisci, puoi usare le API di altri provider come OpenAI o Anthropic configurandoli in modo simile).*
+4.  **Setup del Prompt:** Nelle impostazioni del plugin, individua il campo dedicato al "System Prompt" o "Istruzioni di base". Copia l'intero contenuto del file `GEMINI.md` e incollalo lì. In questo modo l'AI integrata nel telefono conoscerà esattamente le regole per gestire la tua wiki di dieta e sport.
 
 ## 🤝 Contribuire
 Questo è un progetto aperto! Se hai suggerimenti per migliorare le formule di calcolo o la struttura dei file, sentiti libero di aprire una Issue o una Pull Request.
