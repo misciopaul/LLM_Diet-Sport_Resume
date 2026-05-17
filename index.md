@@ -17,6 +17,16 @@
 - [[Sport/Monthly/2026-05|📊 Monthly Report]]
 - [Explore all sports logs](obsidian://search?vault=Diet%26Sport&query=path%3ASport%2F)
 
+## 🧘‍♂️ Mindfulness & Meditation
+- [[Mindfulness/Roadmap_Meditation|🏆 Roadmap 0 to Hero]]
+- [[Mindfulness/How_To_Meditate|📖 Practical Guide (How-To)]]
+- [[Mindfulness/2026-week20|📅 Current Week]]
+
+## 🚫 Bad Habits (Quitting)
+- [[Bad_Habits/Resolution_Framework|🧠 Resolution Framework]]
+- [[Bad_Habits/Smoking_Roadmap|🚭 Smoking Cessation Roadmap]]
+- [[Bad_Habits/2026-week20|📅 Current Week]]
+
 ## ⚙️ Configuration
 - [[SETUP|🛠 Setup Guide]]
 - [[GEMINI|🤖 AI Instructions]]

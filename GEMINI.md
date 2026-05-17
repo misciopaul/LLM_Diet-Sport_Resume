@@ -41,6 +41,31 @@ This file contains the operational rules for automated wiki management.
 - **Exhortation:** At least twice a month (indicatively on the 1st and 15th), if the user hasn't done so, gently remind them to update their body data to keep calculations accurate.
 
 ## Index Maintenance
+- When creating a new weekly file in `Diet/`, `Sport/`, `Mindfulness/` or `Bad_Habits/`, ensure you update the "Current Week" links in the `index.md` file.
+
+## Monthly Reports
+- **Frequency:** At the beginning of each new month, or upon user request.
+- **Proactive Check:** At the start of each session in a new month, check if weekly logs exist for the previous month in `Diet/` or `Sport/`. If they exist but the corresponding monthly file is missing in `Diet/Monthly/` or `Sport/Monthly/`, proactively remind the user to generate the monthly report.
+- **Procedure:**
+    1. Create a new file in `Diet/Monthly/YYYY-MM.md` and `Sport/Monthly/YYYY-MM.md` using the respective templates in `Templates/`.
+    2. Consolidate data from the weeks belonging to that month.
+    3. Calculate monthly totals and daily averages.
+    4. Provide at least 3 qualitative insights based on the data (e.g., "You maintained a constant protein average", "Running volume increased by 10%").
+    5. Update links in `index.md` to point to the "Current Month".
+
+## Obsidian Formatting
+- Use Obsidian Callouts to highlight important insights.
+- Keep files clean and readable.
+asn't reported any data for the bad habit being tracked, ask for a quick update to maintain the "Awareness" streak.
+   - **Trend Analysis:** During the session, if you notice a downward trend in quantity compared to the previous week, provide positive reinforcement.
+
+## Profile & History Management
+- Every time the user updates weight or circumferences in `profile.md`:
+    1. Automatically recalculate indicators in the "Calculated Indicators" section of `profile.md`.
+    2. Add a new row with the current date in the `Body_Measurements.md` file to track evolution.
+- **Exhortation:** At least twice a month (indicatively on the 1st and 15th), if the user hasn't done so, gently remind them to update their body data to keep calculations accurate.
+
+## Index Maintenance
 - When creating a new weekly file in `Diet/` or `Sport/`, ensure you update the "Current Week" links in the `index.md` file.
 
 ## Monthly Reports
