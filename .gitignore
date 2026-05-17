@@ -5,7 +5,4 @@ profilo.md
 Misure_Corporee.md
 
 # Ignora file di configurazione Obsidian locali
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/graph.json
-.obsidian/appearance.json
+.obsidian/
