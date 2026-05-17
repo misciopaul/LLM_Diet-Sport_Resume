@@ -1,21 +1,31 @@
-# Setup Wiki Diet & Sport
+# 🛠 Technical Setup Guide
 
-Questa guida spiega come è stata configurata la wiki e come può essere modificata o riprodotta.
+This guide explains how to technically configure your AI assistant to manage the Diet & Sport Wiki.
 
-## Architettura del Sistema
-Il sistema si basa su tre pilastri:
-1. **`profilo.md`**: Il database dei dati corporei.
-2. **`Diet/` & `Sport/`**: Cartelle per i log settimanali.
-3. **`GEMINI.md`**: Il motore di automazione che istruisce l'AI su come processare i dati.
+## 1. Prerequisites
+- **Obsidian:** Installed on your computer.
+- **AI Assistant:** An assistant with file system access (e.g., **Gemini CLI**, **ChatGPT with Canvas/Advanced Data Analysis** - though Gemini CLI is recommended for its native integration).
+- **Git (Optional):** To keep the repository updated.
 
-## Come Modificare il Sistema
-- **Cambiare i calcoli:** Se vuoi cambiare le formule per il BMR o la Body Fat, modifica le istruzioni in `GEMINI.md`.
-- **Cambiare il formato dei file:** Se preferisci un formato diverso per i nomi dei file (es. `Settimana-20-2026.md`), aggiorna la sezione "Archiviazione" in `GEMINI.md`.
-- **Aggiungere nuovi parametri:** Se vuoi tracciare altro (es. ore di sonno, passi), aggiungi una nuova sezione in `GEMINI.md` descrivendo come vuoi che i dati vengano salvati.
+## 2. Vault Initialization
+1.  **Download the Repository:** Clone or download this project.
+2.  **Open as Vault:** Open the folder in Obsidian.
+3.  **Language Preference:** When you first start your assistant, it will ask for your language. It will then translate the core files to match your choice.
 
-## Riproduzione
-Per replicare questo sistema in un nuovo vault Obsidian:
-1. Copia il file `GEMINI.md` nella root del nuovo vault.
-2. Crea le cartelle `Diet/` e `Sport/`.
-3. Crea il file `profilo.md` con i parametri desiderati.
-4. Gemini riconoscerà automaticamente le istruzioni e inizierà a gestire i log.
+## 3. Configuring Gemini CLI
+If you are using Gemini CLI, ensure the `GEMINI.md` file is present in the root. The CLI reads this file automatically as a "System Prompt" to understand the rules of your Wiki.
+
+### Automated Workflow
+The assistant follows these rules:
+- **Weekly Logs:** Created automatically in `Diet/` and `Sport/`.
+- **Calculations:** Done automatically using your `profile.md`.
+- **Monthly Reports:** Proactively suggested at the start of each month.
+
+## 4. Manual Configuration (Other LLMs)
+If you are not using an automated CLI:
+1. Copy the content of `GEMINI.md`.
+2. Paste it as a "System Instructions" or "Custom Instructions" in your preferred LLM interface.
+3. Manually upload your `profile.md` when you need accurate calculations.
+
+---
+*Ready to start? Ask your assistant: "How can I set up my profile?"*

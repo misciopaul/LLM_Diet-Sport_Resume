@@ -1,57 +1,53 @@
 # 🥗 Diet & Sport Tracking Wiki (Obsidian + AI)
 
-Benvenuto in questo progetto di Wiki personale per il tracciamento della dieta e dell'attività fisica, progettato per funzionare in modo simbiotico con **Obsidian** e un assistente AI (come **Gemini CLI**).
+Welcome to this personal Wiki project for tracking diet and physical activity, designed to work symbiotically with **Obsidian** and an AI assistant (like **Gemini CLI**).
 
-Questo repository fornisce una struttura pronta all'uso per chiunque voglia monitorare la propria salute in modo intelligente, automatizzando i calcoli nutrizionali e il tracciamento dei progressi corporei.
+This repository provides a ready-to-use structure for anyone who wants to monitor their health intelligently, automating nutritional calculations and body progress tracking.
 
-## 🚀 Funzionalità Principali
+## 🚀 Key Features
 
-- **Log Alimentare Automatizzato:** Tu scrivi cosa mangi, l'AI calcola calorie e macro (proteine, grassi, carboidrati, fibre) e compila i file settimanali.
-- **Tracking Sportivo:** Calcolo delle calorie bruciate basato sui tuoi dati antropometrici (MET).
-- **Evoluzione Corporea:** Un sistema per tracciare peso e circonferenze nel tempo con calcolo automatico di BMR, TDEE e Body Fat.
-- **Dashboard Centralizzata:** Un file `index.md` che funge da centro di controllo per navigare velocemente tra i log e i progressi.
-- **Reminders Intelligenti:** Istruzioni integrate per sollecitare aggiornamenti bi-mensili dei dati corporei.
+- **Automated Food Log:** You write what you eat, the AI calculates calories and macros (protein, fat, carbs, fiber) and fills in the weekly files.
+- **Sports Tracking:** Calculation of calories burned based on your anthropometric data (MET).
+- **Body Evolution:** A system to track weight and circumferences over time with automatic calculation of BMR, TDEE, and Body Fat.
+- **Centralized Dashboard:** An `index.md` file that acts as a control center to quickly navigate between logs and progress.
+- **Intelligent Reminders:** Integrated instructions to prompt bi-monthly updates of body data.
 
-## ⚠️ Privacy & Sicurezza
+## ⚠️ Privacy & Security
 
-**IMPORTANTE:** Se decidi di fare il fork di questo repository o di caricare la tua versione su GitHub, **non pubblicare i tuoi dati personali!**
+**IMPORTANT:** If you decide to fork this repository or upload your version to GitHub, **do not publish your personal data!**
 
-I file come `profilo.md`, `Misure_Corporee.md` e i contenuti delle cartelle `Diet/` e `Sport/` conterranno informazioni sensibili sulla tua salute e le tue abitudini.
-- Assicurati di aggiungere questi file al tuo `.gitignore` se intendi mantenere il repository pubblico.
-- Usa questo repository come **template** privato o locale per la tua sicurezza.
+Files like `profile.md`, `Body_Measurements.md`, and the contents of the `Diet/` and `Sport/` folders will contain sensitive information about your health and habits.
+- Make sure to add these files to your `.gitignore` if you intend to keep the repository public.
+- Use this repository as a private or local **template** for your security.
 
-## 📁 Struttura del Repository
+## 📁 Repository Structure
 
-- `Diet/`: Cartella destinata ai log alimentari settimanali (`YYYY-settimanaWW.md`).
-- `Sport/`: Cartella destinata ai log degli allenamenti settimanali.
-- `profilo.md`: Il tuo "database" corporeo attuale.
-- `Misure_Corporee.md`: Tabella storica dell'evoluzione fisica.
-- `index-template.md`: Template per la dashboard principale.
-- `GEMINI.md`: Il file di istruzioni (System Prompt) che guida l'AI nella gestione della wiki.
-- `SETUP.md`: Guida tecnica alla configurazione.
+- `Diet/`: Folder for weekly food logs.
+    - `Monthly/`: Consolidated monthly reports and insights.
+- `Sport/`: Folder for weekly workout logs.
+    - `Monthly/`: Monthly performance summaries.
+- `Templates/`: Contains templates for quickly creating new logs and the dashboard.
+- `profile.md`: Your current body "database".
+- `Body_Measurements.md`: Historical table of physical evolution.
+- `GEMINI.md`: The instruction file (System Prompt) that guides the AI in managing the wiki.
+- `SETUP.md`: Technical configuration guide.
 
-## 🛠 Come Usarlo
+## 🛠 How to Use It
 
-1. **Clona o scarica** questo repository come un nuovo vault di Obsidian.
-2. **Copia `index-template.md` in `index.md`** per creare la tua dashboard privata.
-3. **Configura il tuo assistente AI:** Assicurati che il tuo assistente legga il file `GEMINI.md`.
-3. **Compila il Profilo:** Apri `profilo.md` e inserisci i tuoi dati (peso, altezza, età).
-4. **Inizia a loggare:** Scrivi al tuo assistente: *"Oggi a pranzo ho mangiato 100g di pasta al pomodoro e un petto di pollo"* e guarda la wiki aggiornarsi da sola!
+1. **Clone or download** this repository as a new Obsidian vault.
+2. **Setup your AI assistant:** Ensure your assistant reads the `GEMINI.md` file.
+3. **Run Setup:** During the first interaction, the AI will ask for your preferred language and help you initialize your profile.
+4. **Start logging:** Write to your assistant: *"Today for lunch I had 100g of tomato pasta and a chicken breast"* and watch the wiki update itself!
 
-## 📱 Utilizzo su Smartphone (Senza Gemini CLI)
+## 📱 Mobile Workflow (On-the-go)
 
-Se vuoi utilizzare la tua Wiki direttamente dal telefono senza passare per il terminale:
+Since Gemini CLI is best used from a terminal, you can log your activities on-the-go using your phone:
+1. **Copy the Template:** Copy the content of `Templates/Mobile_Input_Prompt.md` into your favorite mobile notes app (e.g., Apple Notes, Google Keep).
+2. **Fill it out:** During the day, jot down what you eat and your physical activity.
+3. **Sync:** In the evening, paste the entire note into your Gemini CLI terminal. The AI will automatically parse the data and update all relevant logs at once.
 
-1.  **Setup Vault Mobile:** Scarica l'app di Obsidian per iOS o Android. Trasferisci la cartella di questo progetto sul telefono (es. tramite iCloud, Google Drive o cartelle locali) e aprila come un nuovo Vault all'interno dell'app.
-2.  **Installazione Plugin AI:** Vai nelle Impostazioni di Obsidian -> Plugin della Community. Cerca e installa un plugin per l'integrazione di LLM (consigliati: **BMO Chatbot** o **Text Generator**).
-3.  **Configurazione API (Gemini Standard):** 
-    - Vai su [Google AI Studio](https://aistudio.google.com/) per ottenere gratuitamente una API Key di Gemini.
-    - Inserisci la chiave API nelle impostazioni del plugin scelto all'interno di Obsidian, selezionando un modello della famiglia Gemini (es. `gemini-1.5-flash` o `gemini-1.5-pro`).
-    - *(Nota: Se preferisci, puoi usare le API di altri provider come OpenAI o Anthropic configurandoli in modo simile).*
-4.  **Setup del Prompt:** Nelle impostazioni del plugin, individua il campo dedicato al "System Prompt" o "Istruzioni di base". Copia l'intero contenuto del file `GEMINI.md` e incollalo lì. In questo modo l'AI integrata nel telefono conoscerà esattamente le regole per gestire la tua wiki di dieta e sport.
-
-## 🤝 Contribuire
-Questo è un progetto aperto! Se hai suggerimenti per migliorare le formule di calcolo o la struttura dei file, sentiti libero di aprire una Issue o una Pull Request.
+## 🤝 Contributing
+This is an open project! If you have suggestions to improve the calculation formulas or the file structure, feel free to open an Issue or a Pull Request.
 
 ---
-*Creato con ❤️ per la salute e la produttività.*
+*Created with ❤️ for health and productivity.*

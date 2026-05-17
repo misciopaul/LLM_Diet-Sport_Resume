@@ -1,4 +1,4 @@
-# Wiki Diet & Sport - Index
+# Wiki Diet & Sport - Index Template
 
 > [!ABSTRACT] Welcome to your Health Dashboard.
 > Use the links below to quickly navigate through your data and weekly logs.
@@ -8,13 +8,13 @@
 - [[Body_Measurements|📈 Measurement History]]: Your body's evolution over time.
 
 ## 🥗 Nutrition (Diet)
-- [[Diet/2026-week20|📅 Current Week]]
-- [[Diet/Monthly/2026-05|📊 Monthly Report]]
+- [[Diet/{{current_week}}|📅 Current Week]]
+- [[Diet/Monthly/{{current_month}}|📊 Monthly Report]]
 - [Explore all food logs](obsidian://search?vault=Diet%26Sport&query=path%3ADiet%2F)
 
 ## 🏃‍♂️ Physical Activity (Sport)
-- [[Sport/2026-week20|📅 Current Week]]
-- [[Sport/Monthly/2026-05|📊 Monthly Report]]
+- [[Sport/{{current_week}}|📅 Current Week]]
+- [[Sport/Monthly/{{current_month}}|📊 Monthly Report]]
 - [Explore all sports logs](obsidian://search?vault=Diet%26Sport&query=path%3ASport%2F)
 
 ## ⚙️ Configuration
